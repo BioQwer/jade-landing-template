@@ -1,0 +1,12 @@
+//- -------------- Header ---------------- -//
+//- -------------------------------------- -//
+
+- var pages = [{name: 'Home', url: 'index.html'}, {name: 'Internal', url: 'internal.html'}]
+
+header.main__header
+    h1.main__header__title This is a sample template
+
+    ul.main__header__nav
+        - for page in pages
+            li.main__header__nav__item
+                mixin insertSampleButton(page.name, page.url)

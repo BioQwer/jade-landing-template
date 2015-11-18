@@ -1,0 +1,6 @@
+//- -------------- Buttons ---------------- -//
+//- --------------------------------------- -//
+
+mixin insertSampleButton(text, url, newTab)
+    a.generic__button(href=url || '#', target=newTab || '_self') 
+        span.generic__button__text #{text}
