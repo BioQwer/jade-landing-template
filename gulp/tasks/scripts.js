@@ -7,6 +7,12 @@ var gulp = require('gulp'),
 gulp.task('scripts', function() {
 	return gulp.src(['./src/js/*.js'])
     .pipe(concat('prodi.ui.min.js'))
+    .pipe(gulp.dest('./build/js/'));
+});
+
+gulp.task('scripts-min', function() {
+    return gulp.src(['./src/js/*.js'])
+    .pipe(concat('prodi.ui.min.js'))
     .pipe(uglify())
     .pipe(gulp.dest('./build/js/'));
 });
