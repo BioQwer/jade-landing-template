@@ -8,7 +8,7 @@
     "stream",
     "compile"
   ],
-  "repository": "https://github.com/cbriancesco/jade-template",
+  "repository": "https://github.com/cbriancesco/jade-landing-template",
   "author": "Caleb Briancesco <jcaleb4@gmail.com>",
   "license": "MIT",
   "dependencies": {
