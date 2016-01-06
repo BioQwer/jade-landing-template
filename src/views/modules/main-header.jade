@@ -9,4 +9,4 @@ header.main__header
     ul.main__header__nav
         - for page in pages
             li.main__header__nav__item
-                mixin insertSampleButton(page.name, page.url)
+                mixin basicLink(page.name, page.url)

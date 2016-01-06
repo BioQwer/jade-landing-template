@@ -1,10 +1,16 @@
 /* GLOBAL VARIABLES */
-$bg-color   = #5985b1
 
-$size-desktop   = 1300px
-$main-column    = 700px
+
+$size-desktop       = 1610px
+$size-desktop-min   = 1025px
+$size-tablet-min    = 769px
+$size-tablet-max    = 1024px
+$size-mobile-min    = 320px
+$size-mobile-max    = 768px
 
 /* COLOR VARIABLES */
+$bg-color       = #5985b1
+
 $aqua           = #00F5FF
 $blue           = #017cd1
 $gray-blue      = #a0b1bd
@@ -24,3 +30,11 @@ $font-wt-light      = 300
 $font-wt-regular    = 400
 $font-wt-bold       = 700
 $font-wt-extrabold  = 900
+
+
+/* BRAKEPOINTS */
+media_queries = {
+    mobile  : "only screen and (min-width: "+ $size-mobile-min +") and (max-width: "+ $size-mobile-max +")",
+    tablet  : "only screen and (min-width: "+ $size-tablet-min +") and (max-width: "+ $size-tablet-max +")",
+    desktop : "only screen and (min-width: "+ $size-desktop-min +")"
+}

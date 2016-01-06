@@ -2,12 +2,14 @@
 //- ----------------------------------------- -//
 
 extends ../layout/layout
-include ../mixins/buttons
-include ../mixins/big-slider
+
+
+block append head
+    link(href='css/home.css', rel='stylesheet', type='text/css')
 
 
 block content
 
-    //- ALL THE PAGE CONTENT GOES HERE -//
+    h2 hello world!
     
-    mixin bigSlider()
+    mixin basicLink('Click Me', 'http://www.google.com', '_blank')

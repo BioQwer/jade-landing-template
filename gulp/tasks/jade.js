@@ -9,6 +9,7 @@ gulp.task('jade', function() {
         .pipe(gulp.dest('./build/'));
 });
 
+
 gulp.task('jade-min', function() {
     return gulp.src('./src/views/pages/*.jade')
         .pipe(jade())
